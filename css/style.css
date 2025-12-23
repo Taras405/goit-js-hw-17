@@ -1,0 +1,45 @@
+.block {
+  width: 380px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.block__item {
+  width: 100%;
+  height: 100%;
+  transition: 250ms linear;
+}
+
+
+
+.score {
+  padding-top: 100px;
+  text-align: center;
+  font-size: larger;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto;
+}
+
+.game__item {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.game__item.active {
+  background-color: red;
+}
+
+
