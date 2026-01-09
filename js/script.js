@@ -49,11 +49,6 @@ setInterval(() => {
 
   activeIndex = Math.floor(Math.random() * items.length);
   items[activeIndex].classList.add("active");
-
-  setTimeout(() => {
-    items[activeIndex].classList.remove("active");
-    activeIndex = null;
-  }, 1000);
 }, 2000);
 
 items.forEach((item, index) => {
